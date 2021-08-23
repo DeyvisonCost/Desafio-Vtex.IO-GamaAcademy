@@ -15,7 +15,7 @@
 
 ##
 
-<h1> 🚀 Tecnologias </h1>
+<h2> 🚀 Tecnologias </h2>
 
 - ReactJS
 - Typescript
