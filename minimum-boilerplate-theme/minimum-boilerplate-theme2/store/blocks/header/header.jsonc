@@ -1,0 +1,142 @@
+{
+  "header": {
+    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+  }, 
+
+  "header.full": {
+    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+  },
+
+  //** 1
+  
+  "header-layout.desktop": {
+    "children": [
+      "sticky-layout#desktop",
+      "header-row#1-desktop"   
+    ]
+  },
+   
+  "header-row#1-desktop": {
+    "children": [
+      "header-border",
+      "vtex.menu@2.x:menu#websites"
+    ],
+    "props": {
+      "fullWidth": "true"
+    }
+  },
+
+  "vtex.menu@2.x:menu#websites": {
+    "props": {
+      "items": [
+        {
+          "id": "menu-item-home",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "https://squadwatches--hiringcoders2021.myvtex.com/",
+            "noFollow": false,
+            "tagTitle": "home",
+            "text": "home"
+          }
+        },
+        {
+          "id": "checkout",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "https://squadwatches--hiringcoders2021.myvtex.com/checkout/#/cart",
+            "noFollow": false,
+            "tagTitle": "checkout",
+            "text": "checkout"
+          }
+        }
+      ]
+    }
+  },
+  
+ 
+ //** 1
+
+  "sticky-layout#desktop": {
+    "props": {
+      "blockClass": "sticky-header"
+    },
+    "children": ["flex-layout.row#desktop"]
+  },
+  "flex-layout.row#desktop": {
+    "props": {
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": true
+    },
+    "children": [
+      "flex-layout.col#logo-desktop",
+      "flex-layout.col#spacer",
+      "search-bar",
+      "locale-switcher",
+      "login",
+      "minicart.v2"
+    ]
+  },
+
+  "flex-layout.col#spacer": {
+    "props": {
+      "width": "grow"
+    }
+  },
+  "flex-layout.col#logo-desktop": {
+    "props": {
+      "verticalAlign": "middle"
+    },
+    "children": ["logo"]
+  },
+  "logo": {
+    "props": {
+      "title": "Logo",
+      "href": "/",
+      "url": " https://maratonavirtual.s3.sa-east-1.amazonaws.com/upmedal.png ",
+      "width": "120"
+    }
+  },
+
+  "header-layout.mobile": {
+    "children": ["sticky-layout#mobile"]
+
+  },
+  "sticky-layout#mobile": {
+    "children": ["flex-layout.row#mobile"]
+  },
+  "flex-layout.row#mobile": {
+    "children": [
+      "drawer",
+      "logo#2",
+      "flex-layout.col#spacer",
+      "login",
+      "minicart.v2"
+    ],
+    "props": {
+      "blockClass": "main-header-mobile",
+      "preventHorizontalStretch": true,
+      "preserveLayoutOnMobile": true,
+      "fullWidth": true
+    }
+  },
+
+  
+  "logo#2": {
+    "props": {
+      "title": "Logo#2",
+      "href": "/",
+      "url": " https://maratonavirtual.s3.sa-east-1.amazonaws.com/upmedal.png ",
+      "width": "100"
+    }
+  }
+}
+
