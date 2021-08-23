@@ -1,0 +1,50 @@
+.autoCompleteOuterContainer {
+    width: 300px;
+}
+
+
+/** O bloco abaixo foi criado para ajustar o tamanho da imagem ao site **/
+
+.imageElement {
+    margin-top: 10px;
+    width: 900px;
+    border-radius: 15px;
+}
+
+ /** no site de apoio a imagem 1 estava maior que a 2. Então criei o bloco abaixo para igualar a diferença entre elas  **/
+
+.imageElement--image2{
+    height: 317px;
+}
+
+@media screen and (max-width: 800px) { 
+    .imageElement--image2 {
+        height: 260px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+.imageElement--image2 {
+    height: 180px;
+}
+}
+
+.searchIcon{
+    color: #59FF00 ;
+}
+
+.searchBarContainer :global(.vtex-input-prefix__group) {
+    border: none;
+    border-radius: 0;
+    border-bottom: thin solid white;
+}
+
+.searchBarContainer :global(.vtex-input__suffix) {
+    background: transparent;
+}
+
+.searchBarContainer :global(.vtex-styleguide-9-x-input) {
+    background: transparent;
+}
+
+

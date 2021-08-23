@@ -1,0 +1,15 @@
+.slide {
+    width: 900px;
+}
+
+.caretIcon {
+    color: lime;
+}
+
+.paginationDot--isActive {
+    background-color: lime;
+}
+
+.paginationDotsContainer {
+    bottom: -25px;
+}
